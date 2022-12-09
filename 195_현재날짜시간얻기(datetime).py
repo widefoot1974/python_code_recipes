@@ -40,7 +40,7 @@ print(f'나의 생일은 {dt_str}')
 while True:
     dt4 = datetime.now() - birth_day
     (t_d, t_h, t_m, t_s) = delta_to_date(dt4)
-    print(f'내가 살아온 날은 {t_d:,}일 {t_h}시:{t_m}분:{t_s}초')
+    print(f'내가 살아온 날은 {t_d:,}일 {t_h:>02}시:{t_m:>02}분:{t_s:>02}초')
     time.sleep(10)
 
 
